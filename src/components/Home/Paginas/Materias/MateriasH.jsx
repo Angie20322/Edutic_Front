@@ -39,7 +39,6 @@ const MateriasH = ({ open, setOpen, loginData }) => {
             {materias.length ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 md:m-5">
                 {materias.map((e, index) => {
-                  console.log(e.id);
                   return (
                     <Link
                       key={index}

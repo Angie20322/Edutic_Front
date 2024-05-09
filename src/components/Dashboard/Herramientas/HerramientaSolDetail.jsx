@@ -46,7 +46,6 @@ const HerramientaSolDetail = ({ loginData }) => {
       // Error actualizacion
       if (error.response.status === 500) {
         navigate("/dashboard/herramientas");
-        console.log(error);
       }
     }
   };
@@ -71,7 +70,6 @@ const HerramientaSolDetail = ({ loginData }) => {
       return res;
     } catch (error) {
       const res = error;
-      console.log(error.response.data.error);
       return res;
     }
   };

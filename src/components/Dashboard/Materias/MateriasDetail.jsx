@@ -84,8 +84,6 @@ const MateriasDetail = () => {
     return <Navigate to={"/"} />;
   }
 
-  console.log(materia);
-
   return (
     <div className="min-h-full">
       <Nav />

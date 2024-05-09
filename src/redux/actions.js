@@ -66,7 +66,6 @@ export const getState = () => {
 export const getCity = (state) => {
   const endpoint = `${URL}/colombia/city/${state}`;
   return async (dispatch) => {
-    console.log(state);
     try {
       const { data } = await axios(endpoint);
       return dispatch({
@@ -81,7 +80,6 @@ export const getCity = (state) => {
 
 export const getAllSolicitudes = (auth) => {
   const endpoint = `${URL}/solicitud`;
-  console.log(endpoint);
   return async (dispatch) => {
     try {
       const { data } = await axios(endpoint, {

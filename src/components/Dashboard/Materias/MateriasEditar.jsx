@@ -28,7 +28,7 @@ const MateriasEditar = (props) => {
   };
   const [mat, setMat] = useState(initialMateria);
   const allHerramientas = useSelector((state) => state.herramientas);
-  const [auth, setAuth] = useContext(CRMContext);
+  const [auth] = useContext(CRMContext);
 
   const cambiarImagen = async () => {
     try {

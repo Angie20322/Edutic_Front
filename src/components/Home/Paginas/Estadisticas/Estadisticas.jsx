@@ -1,7 +1,5 @@
 import { Navigate } from "react-router-dom";
 import { useContext } from "react";
-import { PowerBIEmbed } from "powerbi-client-react";
-import { models } from "powerbi-client";
 
 import { CRMContext } from "../../../../context/CRMContext.jsx";
 import Sidebar from "../../Principal/Sidebar.jsx";

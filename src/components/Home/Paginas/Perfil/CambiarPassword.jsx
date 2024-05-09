@@ -1,12 +1,12 @@
-import { useEffect, useState, useContext } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
 
 import clienteAxios from "../../../../config/axios.js";
 import { CRMContext } from "../../../../context/CRMContext.jsx";
 
-const CambiarPassword = ({ setModal, usuarioId }) => {
+const CambiarPassword = ({ usuarioId }) => {
   const navigate = useNavigate();
 
   const {
@@ -29,17 +29,14 @@ const CambiarPassword = ({ setModal, usuarioId }) => {
           },
         }
       );
-      console.log(res);
       return res;
     } catch (error) {
       const res = error;
-      console.log(error.response.data.error);
       return res;
     }
   };
 
   const onSubmit = async (e) => {
-    console.log(e);
     const resultado = await ingresarPassword({ password: e.password });
     if (resultado.status === 200) {
       Swal.fire({

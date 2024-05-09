@@ -44,7 +44,6 @@ const SolicitudDetail = () => {
       return res;
     } catch (error) {
       const res = error;
-      console.log(error.response.data.error);
       return res;
     }
   };

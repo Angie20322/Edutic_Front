@@ -88,7 +88,6 @@ const EditarAdmin = () => {
             });
           }
         } catch (error) {
-          console.log(error);
           Swal.close();
         }
       }

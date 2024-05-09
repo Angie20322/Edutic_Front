@@ -106,8 +106,8 @@ const Perfil = (props) => {
                   <h1 className="font-bold text-4xl text-green-800 py-6 text-center">
                     Perfil de Usuario
                   </h1>
-                  <div className="flex flex-col md:flex-row">
-                    <div className="flex flex-col items-center w-3/12 ml-20 md:ml-0">
+                  <div className="flex flex-col mx-3 md:mx-0 md:flex-row">
+                    <div className="flex flex-col items-center md:w-3/12 ml-20 md:ml-0">
                       <div>{renderFotoPerfil()}</div>
                       <button
                         className="w-[100px] m-2 p-3 bg-gray-400 hover:bg-gray-300 hover:underline flex"
@@ -117,7 +117,7 @@ const Perfil = (props) => {
                         Editar
                       </button>
                     </div>
-                    <div className="text-xl w-7/12 ml-10 md:ml-0">
+                    <div className="text-xl md:w-7/12">
                       <div className="p-3 bg-neutral-300">
                         <p className="text-4xl font-semibold">
                           {usuario.nombre} {usuario.apellido}

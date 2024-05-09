@@ -44,7 +44,6 @@ const Unete = (props) => {
   }, [dispatch]);
 
   useEffect(() => {
-    console.log("cargando");
     try {
       dispatch(getCity(st));
     } catch (error) {
@@ -90,7 +89,6 @@ const Unete = (props) => {
           title: "Solicitud enviada",
           text: "se ha enviado la solicitud correctamente",
         });
-        console.log(solicitud);
         setSolicitud(initialSolicitud);
         setModal(false);
       } catch (error) {

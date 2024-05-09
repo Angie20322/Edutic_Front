@@ -22,10 +22,8 @@ const Confirmacion = () => {
   const confirmarUsuario = async (datos) => {
     try {
       const res = await clienteAxios.get(`/usuarios/confirmar/${datos}`);
-      console.log(res);
       setUserConfirmar(undefined);
     } catch (error) {
-      console.log(error.response.data.error);
       setUserConfirmar(error.response.data.error);
     }
   };
@@ -36,11 +34,9 @@ const Confirmacion = () => {
         `/usuarios/confirmar/${enlace}`,
         password
       );
-      console.log(res);
       return res;
     } catch (error) {
       const res = error;
-      console.log(error.response.data.error);
       return res;
     }
   };
@@ -87,6 +83,18 @@ const Confirmacion = () => {
               <p className="text-center text-lg font-medium">
                 Ingresa una contraseña para acceder a tu cuenta
               </p>
+              <div className="text-lime-800 text-xs text-left ml-5">
+                <p className="font-bold">Reglas de la contraseña: </p>
+                <ul className="list-disc">
+                  <li className="ml-5">De 8 a 16 caracteres</li>
+                  <li className="ml-5">Al menos un número</li>
+                  <li className="ml-5">Al menos una letra minúscula</li>
+                  <li className="ml-5">Al menos una letra mayúscula</li>
+                  <li className="ml-5">
+                    Al menos un símbolo especial (~!@#$%^&*+)
+                  </li>
+                </ul>
+              </div>
 
               <div>
                 <label htmlFor="email" className="sr-only">

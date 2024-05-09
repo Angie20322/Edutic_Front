@@ -44,7 +44,6 @@ const AdminNuevo = () => {
       return res;
     } catch (error) {
       const res = error;
-      console.log(error);
       return res;
     }
   };

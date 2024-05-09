@@ -11,7 +11,7 @@ const NoticiaEditar = (props) => {
   const navigate = useNavigate();
   const { noticia } = props;
   const [errores, setErrores] = useState({});
-  const [auth, setAuth] = useContext(CRMContext);
+  const [auth] = useContext(CRMContext);
   const [imagenEdit, setImagenEdit] = useState("");
   const { id, titulo, imagen, contenido } = noticia;
   const initialNoticia = {

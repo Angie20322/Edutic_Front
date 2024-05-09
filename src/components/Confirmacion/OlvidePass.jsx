@@ -17,11 +17,9 @@ const OlvidePass = () => {
   const ingresarEmail = async (email) => {
     try {
       const res = await clienteAxios.post(`/password/resetpass/`, email);
-      console.log(res);
       return res;
     } catch (error) {
       const res = error;
-      console.log(error.response.data.error);
       return res;
     }
   };

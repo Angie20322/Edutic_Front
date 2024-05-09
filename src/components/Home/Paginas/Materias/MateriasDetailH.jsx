@@ -30,7 +30,6 @@ const MateriasDetailH = ({ open, setOpen, loginData }) => {
       // Error actualizacion
       if (error.response.status === 500) {
         navigate("/home/materias");
-        console.log(error);
       }
     }
   };

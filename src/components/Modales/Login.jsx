@@ -42,7 +42,6 @@ const Login = ({ setModal, setLoginData }) => {
         jwtToken,
         auth: true,
       });
-      console.log(respuesta.data);
       if (usuario) {
         navigate("/home/noticias");
       } else {

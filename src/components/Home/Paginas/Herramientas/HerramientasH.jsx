@@ -19,8 +19,6 @@ const HerramientasH = ({ open, setOpen, loginData }) => {
     return <Navigate to={"/"} />;
   }
 
-  console.log("herramientas", herramientas);
-
   const herramientasPublicadas = herramientas.filter(
     (herramienta) => herramienta.publicado
   );

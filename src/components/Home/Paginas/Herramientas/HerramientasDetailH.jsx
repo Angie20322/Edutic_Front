@@ -47,7 +47,6 @@ const HerramientasDetailH = ({ open, setOpen, loginData }) => {
       // Error actualizacion
       if (error.response.status === 500) {
         navigate("/dashboard/herramientas");
-        console.log(error);
       }
     }
   };

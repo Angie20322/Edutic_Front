@@ -20,10 +20,8 @@ const RestablecerPass = () => {
   const confirmarUsuario = async (datos) => {
     try {
       const res = await clienteAxios.get(`/usuarios/confirmar/${datos}`);
-      console.log(res);
       setUserConfirmar(undefined);
     } catch (error) {
-      console.log(error.response.data.error);
       setUserConfirmar(error.response.data.error);
     }
   };
@@ -34,11 +32,9 @@ const RestablecerPass = () => {
         `/password/olvidepass/${enlace}`,
         password
       );
-      console.log(res);
       return res;
     } catch (error) {
       const res = error;
-      console.log(error.response.data.error);
       return res;
     }
   };
