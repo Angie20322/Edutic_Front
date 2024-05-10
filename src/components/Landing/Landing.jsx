@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import ReactPlayer from "react-player";
 
 import Modal from "./Modal.jsx";
 import Login from "../Modales/Login.jsx";
@@ -45,13 +46,12 @@ const Landing = (props) => {
         className="h-full w-full lg:h-screen lg:w-screen bg-cover md:bg-center fondo grid grid-cols-1 lg:grid-cols-2 gap-14 pt-72 md:pt-52 px-16"
         id="inicio"
       >
-        <iframe
-          className="mt-10 lg:mt-0 lg:ml-6 w-72 md:w-full md:h-full"
-          src="https://www.youtube.com/embed/Ae5n33PC2kk"
-          title="12 herramientas educativas digitales para mejorar el aprendizaje 😀"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+        <ReactPlayer
+          url="https://www.youtube.com/embed/Ae5n33PC2kk"
+          className="react-player"
+          width="50%"
+          height="100%"
+        />
         <div className="items-center">
           <p className="text-5xl text-center text-white font-semibold italic">
             «Tenemos que preparar a los estudiantes para su futuro, no para
