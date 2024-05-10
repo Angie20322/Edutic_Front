@@ -48,7 +48,9 @@ const Landing = (props) => {
       >
         <ReactPlayer
           url="https://www.youtube.com/embed/Ae5n33PC2kk"
-          className="react-player mt-10 lg:mt-0 lg:ml-6 w-72 md:w-full md:h-full"
+          className="react-player mt-10 lg:mt-0 lg:ml-6 md:w-full md:h-full"
+          width="100%"
+          height="100%"
         />
         <div className="items-center">
           <p className="text-5xl text-center text-white font-semibold italic">
