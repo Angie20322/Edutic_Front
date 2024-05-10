@@ -47,7 +47,7 @@ const Landing = (props) => {
         id="inicio"
       >
         <ReactPlayer
-          url="https://www.youtube.com/embed/Ae5n33PC2kk"
+          url="https://www.youtube.com/watch?v=bqCTT5RXzVo"
           className="react-player mt-10 lg:mt-0 lg:ml-6 md:w-full md:h-full"
           width="100%"
           height="100%"
