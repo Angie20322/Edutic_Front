@@ -81,8 +81,8 @@ const MateriaNueva = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     Swal.fire({
-      title: "¿Guardar herramienta?",
-      text: "¿Quieres guardar esta herramienta",
+      title: "¿Guardar Materia?",
+      text: "¿Quieres guardar esta materia?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",

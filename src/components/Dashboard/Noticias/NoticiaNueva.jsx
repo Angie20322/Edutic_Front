@@ -19,6 +19,7 @@ const NoticiaNueva = () => {
     titulo: "",
     imagen: "",
     contenido: "",
+    publicado: true,
   };
   const [noti, setNoti] = useState(initialNoticia);
   const [errores, setErrores] = useState({});
