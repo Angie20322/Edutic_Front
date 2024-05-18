@@ -21,7 +21,7 @@ const Confirmacion = () => {
 
   const confirmarUsuario = async (datos) => {
     try {
-      const res = await clienteAxios.get(`/usuarios/confirmar/${datos}`);
+      await clienteAxios.get(`/usuarios/confirmar/${datos}`);
       setUserConfirmar(undefined);
     } catch (error) {
       setUserConfirmar(error.response.data.error);
