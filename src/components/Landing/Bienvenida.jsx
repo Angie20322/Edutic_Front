@@ -1,4 +1,6 @@
-import foto from "../../images/child-865116_1280.jpg";
+import Bienvenida1 from "../../images/bienvenida1.jpg";
+import Bienvenida2 from "../../images/bienvenida2.jpg";
+import Bienvenida3 from "../../images/bienvenida3.jpg";
 import Modal from "./Modal.jsx";
 import Login from "../Modales/Login.jsx";
 import Unete from "../Modales/Unete.jsx";
@@ -22,7 +24,7 @@ const Bienvenida = (props) => {
           <Unete setModal={setModal} />
         )}
       </Modal>
-      <div className="h-screen w-screen pt-72 lg:pt-40 px-16" id="bienvenida">
+      <div className="h-screen w-screen pt-72 lg:pt-40 px-16 mb-6" id="bienvenida">
         {" "}
         <h1 className="text-center my-16 text-3xl font-bold uppercase">
           ¡BIENVENIDO!
@@ -30,7 +32,7 @@ const Bienvenida = (props) => {
         <div className="space-y-5 text-center">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
             <div className="rounded-lg">
-              <img src={foto} alt="imagen foto" />
+              <img src={Bienvenida1} alt="imagen Bienvenida1" />
             </div>
             <div className="rounded-lg lg:col-span-2 p-4">
               <h2 className="text-xl font-semibold my-3">¿Quiénes somos?</h2>
@@ -50,22 +52,16 @@ const Bienvenida = (props) => {
             <div className=" rounded-lg lg:col-span-2">
               <h2 className="text-xl font-semibold my-3">Reseña</h2>
               <p className="p-3 font-base">
-                Nunc ut neque quis ante rhoncus rhoncus at et odio. Pellentesque
-                vulputate lobortis turpis vel ultrices. In erat leo, condimentum
-                sed dui eu, facilisis laoreet lorem. Nam vitae lacus sit amet
-                velit lobortis malesuada in sit amet nisl. Orci varius natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Phasellus ullamcorper sollicitudin egestas. Nullam velit
-                est, rhoncus ac dolor et, pharetra.{" "}
+              un aplicativo que consolide las herramientas tecnológicas en el ámbito educativo puede transformar la experiencia de aprendizaje y enseñanza, haciendo que sea más eficiente, accesible y personalizada.
               </p>
             </div>
             <div className="rounded-lg">
-              <img src={foto} alt="imagen foto" />
+              <img src={Bienvenida2} alt="imagen Bienvenida1" />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
             <div className="hidden rounded-lg lg:block">
-              <img src={foto} alt="imagen foto" />
+              <img src={Bienvenida3} alt="imagen Bienvenida1" />
             </div>
             <div className="rounded-lg lg:col-span-2 p-4">
               <h2 className="text-xl font-semibold my-3">Objetivo</h2>

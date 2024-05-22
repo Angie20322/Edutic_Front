@@ -550,7 +550,7 @@ const Unete = (props) => {
                 <input type="checkbox" required />
                 <label>
                   Acepta los{" "}
-                  <Link to={""} target="_blank">
+                  <Link to={"https://mailunicundiedu-my.sharepoint.com/:b:/g/personal/dsgamboa_ucundinamarca_edu_co/EYvG2JgcnYBIvYBg7eVAweQBoiFRrGQr5OejTZROkHgX7w?e=EOXT9f"} target="_blank">
                     <span className="text-green-800 mr-1 hover:underline hover:text-green-700">
                       terminos y condiciones
                     </span>

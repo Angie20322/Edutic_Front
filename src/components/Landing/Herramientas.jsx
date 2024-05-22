@@ -36,14 +36,7 @@ const Herramientas = (props) => {
           <h2 className="text-4xl my-3 font-bold">ESTADÍSTICAS GENERALES</h2>
           <div className="flex flex-col">
             <p className="font-basic text-lg">
-              {`Con mi mentoría entenderás mejor como y donde poner tu tiempo y
-        energía. Pensarás estratégicamente sobre como gestionar tu carrera, tu
-        hogar y tu vida, sintíendote en control y enfocándote en lo
-        verdaderamente importante. Tal vez tengas una idea para un negocio
-        nuevo, o simplemente sabes que quieres trabajar para ti mismo pero no
-        sabes "en qué". Cualquiera sea el caso, estaré encantada de esclarecer
-        tus objetivos y ayudarte a comenzar el camino hacia convertirte en un
-        emprendedor.`}
+              {`Se gestionarán estadísticas relacionadas con el uso de herramientas tecnológicas en las clases, con el objetivo de visualizar su frecuencia de uso y determinar cuáles son las más efectivas. Esta recopilación de datos permitirá identificar patrones y tendencias en la adopción de tecnologías educativas, así como evaluar su impacto en el proceso de enseñanza y aprendizaje.`}
             </p>
             <button
               className="p-4 my-5 bg-green-800 text-white hover:bg-green-700 font-bold text-lg"
