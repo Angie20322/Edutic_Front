@@ -24,7 +24,10 @@ const Bienvenida = (props) => {
           <Unete setModal={setModal} />
         )}
       </Modal>
-      <div className="h-screen w-screen pt-72 lg:pt-40 px-16 mb-6" id="bienvenida">
+      <div
+        className="h-screen w-screen pt-72 lg:pt-40 px-16 mb-6"
+        id="bienvenida"
+      >
         {" "}
         <h1 className="text-center my-16 text-3xl font-bold uppercase">
           ¡BIENVENIDO!
@@ -37,10 +40,10 @@ const Bienvenida = (props) => {
             <div className="rounded-lg lg:col-span-2 p-4">
               <h2 className="text-xl font-semibold my-3">¿Quiénes somos?</h2>
               <p className="p-3 font-base">
-                Somos estudiantes de ingeniería de sistemas y hemos desarrollado
-                un aplicativo web con el objetivo de proporcionar a los
-                profesores un espacio centralizado donde puedan descubrir y
-                acceder a diversas herramientas tecnológicas para motivar a sus
+                Somos estudiantes de Ing. Sistemas y hemos desarrollado un
+                aplicativo web con el objetivo de proporcionar a los profesores
+                un espacio centralizado donde puedan descubrir y acceder a
+                diversas herramientas tecnológicas para motivar a sus
                 estudiantes durante las clases. Nuestra plataforma busca
                 facilitar el proceso de integración de tecnología en el aula,
                 brindando opciones innovadoras que enriquezcan la experiencia de
@@ -52,7 +55,10 @@ const Bienvenida = (props) => {
             <div className=" rounded-lg lg:col-span-2">
               <h2 className="text-xl font-semibold my-3">Reseña</h2>
               <p className="p-3 font-base">
-              un aplicativo que consolide las herramientas tecnológicas en el ámbito educativo puede transformar la experiencia de aprendizaje y enseñanza, haciendo que sea más eficiente, accesible y personalizada.
+                un aplicativo que consolide las herramientas tecnológicas en el
+                ámbito educativo puede transformar la experiencia de aprendizaje
+                y enseñanza, haciendo que sea más eficiente, accesible y
+                personalizada.
               </p>
             </div>
             <div className="rounded-lg">

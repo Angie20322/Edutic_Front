@@ -37,7 +37,10 @@ const CambiarPassword = ({ usuarioId }) => {
   };
 
   const onSubmit = async (e) => {
-    const resultado = await ingresarPassword({ password: e.password });
+    const resultado = await ingresarPassword({
+      password: e.password,
+      actualPass: e.actualPass,
+    });
     if (resultado.status === 200) {
       Swal.fire({
         icon: "success",
@@ -83,6 +86,31 @@ const CambiarPassword = ({ usuarioId }) => {
               </li>
             </ul>
           </div>
+          <div>
+            <label htmlFor="actualPass" className="sr-only">
+              Contraseña actual
+            </label>
+
+            <div className="relative">
+              <input
+                id="actualPass"
+                type="password"
+                {...register("actualPass", {
+                  required: {
+                    value: true,
+                    message: "Ingrese su contraseña actual",
+                  },
+                })}
+                className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+                placeholder="Contraseña actual"
+              />
+            </div>
+          </div>
+          {errors.actualPass && (
+            <p className="text-rose-700 text-sm font-bold">
+              {errors.actualPass.message}
+            </p>
+          )}
 
           <div className="text-gray-700">
             <label htmlFor="email" className="sr-only ">
