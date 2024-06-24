@@ -142,7 +142,7 @@ const Nav = () => {
             Miembros
           </Link>
           <Link
-            to="https://www.microsoft.com/es-es/power-platform/products/power-bi"
+            to="https://mailunicundiedu-my.sharepoint.com/:x:/g/personal/dsgamboa_ucundinamarca_edu_co/EfQ84_uFI8hNmKAYukzjUEkByTRxEevOrnXck-1kbGkU8Q?e=beqWbq"
             target="_blank"
             className="text-white hover:bg-green-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >

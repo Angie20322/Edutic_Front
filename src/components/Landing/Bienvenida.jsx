@@ -58,7 +58,7 @@ const Bienvenida = (props) => {
                 Un aplicativo que consolide herramientas tecnológicas en el
                 ámbito educativo puede transformar la experiencia de aprendizaje
                 y enseñanza, haciéndola más eficiente, accesible y
-                personalizada.
+                personalizada.  
               </p>
             </div>
             <div className="rounded-lg">
