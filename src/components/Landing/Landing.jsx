@@ -61,7 +61,7 @@ const Landing = (props) => {
               className={`mt-6 p-3 text-lg bg-transparent border-2 font-bold hover:border-gray-300 hover:text-gray-300`}
               onClick={handleButton}
             >
-              Unete
+              Únete
             </button>
           </p>
         </div>
